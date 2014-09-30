@@ -1,0 +1,97 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="headerbanner">
+        <div class="responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left">
+                {{widget('profile', 'profile-phone', { 'profileType':'phone', 'phone':'profile', 'refreshtime':'1800000'})|raw}}
+            </div>
+            <div class="column columns-two-right">
+                {{widget('profile', 'footercolumn1profilesocialicons', { 'profileType':'socialicons',   'socialicons':'profile'})|raw}}
+            </div>
+        </div>
+</div>
+
+<header class="bk-header">
+    <div class="companyheader clearfix">
+    <div class="border page-wrap">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        <div class="companytitle">
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+        {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
+    </div>
+    </div>
+</header>
+
+
+<div class="slideshow-wrap">   
+    {{widget('image', 'image-widget', { 'src': asset('images/main-image.jpg'), 'fileName': 'main-image.jpg', 'fileSize': '58kb', 'imageSize': '2500 x 660', 'imageWidth': '2500px'})|raw}} 
+    <div class="page-wrap-slideshow">
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item">
+                <section class="carousel-text">
+                    <span>{{widget('content', 'textwidgetbox1', {content: '<h3 style="text-align:left">Welcome, you have been invited to Rory and Becky’s wedding ceremony</h3>', lines: 'all'})|raw}}</span>
+                    <span>{{widget('content', 'textwidgetbox2', {content: '<h4 style="text-align:left">Monday 2nd April         2014</h4>', lines: 'all'})|raw}}</span>
+                </section>
+            </div>
+            <div class="item">
+                <section class="carousel-text">
+                    <span>{{widget('content', 'textwidgetbox2', {content: '<h3 style="text-align:left">Welcome, you have been invited to Rory and Becky’s wedding ceremony</h3>', lines: 'all'})|raw}}</span>
+                    <span>{{widget('content', 'textwidgetbox4', {content: '<h4 style="text-align:left">Monday 2nd April         2014</h4>', lines: 'all'})|raw}}</span>
+                </section>
+            </div>
+            <div class="item">
+                <section class="carousel-text">
+                    <span>{{widget('content', 'textwidgetbox3', {content: '<h3 style="text-align:left">Welcome, you have been invited to Rory and Becky’s wedding ceremony</h3>', lines: 'all'})|raw}}</span>
+                    <span>{{widget('content', 'textwidgetbox6', {content: '<h4 style="text-align:left">Monday 2nd April 2014</h4>', lines: 'all'})|raw}}</span>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-wrap">
+	<div class="mainzone">
+		{{zone('main')|raw}}
+	</div>
+</div>
+
+<footer class="bk-footer">
+    <div class="wrapper clearfix">
+        {{widget('logo', 'footerlogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        {{widget('companyname', 'footercompanyname', {"business": "profile"})|raw}}
+        {{widget('content', 'footertext1', {content: 'This is a content widget.', lines: 'all'})|raw}}
+        {{widget('content', 'footertext2', {content: 'This is a content widget.', lines: 'all'})|raw}}
+    </div>
+</footer>
+
+{% endblock %}
+
+{% block bodyscripts %}
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="{{asset('js/owl-carousel/owl.carousel.js')}}"></script>
+
+<script>
+    jQuery(document).ready(function() {
+
+      $("#owl-demo").owlCarousel({
+        lazyLoad : true,
+        navigation : true,
+        slideSpeed: 200,
+        autoPlay: true,
+        stopOnHover: true,
+        items : 1, 
+        itemsDesktop : false, 
+        itemsDesktopSmall : false,
+        itemsTablet: false, 
+        itemsMobile : false,
+        navigationText : false
+      });
+    });
+</script>  
+
+{% endblock %}  

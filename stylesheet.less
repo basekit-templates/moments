@@ -1,0 +1,405 @@
+// -----------------------------
+// Imports
+// -----------------------------
+
+@import "@{templateCommon}/basekit-bootstrap.less";
+@import "@{templateLocal}/css/widgets.less";
+@import "@{templateLocal}/css/ecommerce.less";
+@import "@{templateLocal}/css/owl.less";
+
+// -----------------------------
+// Page Settings
+// -----------------------------
+
+body {
+    width: 100%; 
+    height: 100%;
+    background-position: 0px 0px;
+    background: image('/images/background.png');
+}
+
+// Wrapper 
+.wrapper {
+    width: 80%;
+    margin: 0 10%;
+    @media @mobile {
+        width:90%;
+        margin: 0 5%;
+    }
+}
+
+ul, li {
+	margin: 0;
+}
+
+.page-wrap {
+    padding:30px;
+    width: 960px;
+    margin: 0px auto;
+    background-color:@color-swatch1;
+    @media (max-width: 1024px) {
+        width: 90%;
+        margin: 0px 5%;
+    @media @tablet {
+        width: 90%;
+        margin: 0px 5%;
+        }
+    }
+}
+
+.page-wrap-slideshow {
+    width: 960px;
+    margin: 0px auto;
+    background-color:@color-swatch1;
+    @media (max-width: 1024px) {
+        width: 90%;
+        margin: 0px 5%;
+    @media @tablet {
+        width: 90%;
+        margin: 0px 5%;
+        }
+    }
+}
+
+/*  ===============================
+    Default Page
+    =============================== */
+
+.bk-pt-default .companyheader {
+    margin-bottom:30px;
+}
+
+/*  ===============================
+    Header
+    =============================== */
+
+.headerbanner {
+    background-color:@color-swatch4;
+}
+
+header.bk-header {
+    background-color:@color-swatch1;
+}
+
+.companyheader {
+    display: block;
+    padding: 0;
+    padding:20px 0px;
+}
+
+.companytitle {
+  position: relative;
+  text-align: center;
+  border-top: 1px solid @color-swatch7;
+  display: block;
+  margin: 0 auto;
+  padding: 25px 25px 0px 25px;
+  margin-top: 30px;
+  width:500px;
+}
+
+.widget.companyname {
+  text-align: center;
+  display: inline;
+  text-align: center;
+  padding: 0px 20px;
+  margin: 0;
+  background: @color-swatch1;
+  top:-45px;
+}
+
+/* COMPANY NAME */
+
+.widget.companyname {
+    display: block;
+}
+
+.companyname a:hover {
+    text-decoration: none;
+}
+
+.widget.companyname a {
+    padding: 0;
+    @media @mobile {
+        line-height: bkscale(@font-swatch10-line-height, 0.8);
+    }
+}
+
+.border{
+    border:1px solid @color-swatch7;
+    width: 97%;
+    margin:0 20px;
+}
+
+.border.page-wrap {
+    padding:20px 0px 0px 0px;
+}
+
+/* LOGO */
+
+.widget.logo {
+    display: block;
+    margin-right: 2px;
+    padding-top: 6px;
+}
+
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0px auto;
+        display: table;
+    }
+}
+
+.mainzone {
+    border:1px solid @color-swatch7;
+    padding:20px;
+}
+
+/*  ===============================
+    OWL Carousel
+    =============================== */
+
+.slideshow-wrap {
+    position:relative;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.owl-carousel {
+    width:50%;
+    position:absolute;
+    top:0;
+    .widget.content .bk-content-text * {
+        text-align:center!important;
+        @media @mobile {
+            padding: 0 20px 0 25px;
+        }
+    }
+}
+.carousel-text {
+    padding: 40px 20px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    h3 {
+        font-family:@font-swatch8-font-family; 
+        font-weight: @font-swatch8-font-weight; 
+        color:@font-swatch8-color; 
+        line-height:@font-swatch8-line-height; 
+        letter-spacing: @font-swatch8-letter-spacing; 
+        font-size: @font-swatch8-font-size;
+        @media @tablet {
+            font-size: (@font-swatch8-font-size * 0.8);
+            line-height: (@font-swatch8-line-height * 0.8);
+        }
+        @media @mobile {
+            font-size: (@font-swatch8-font-size * 0.8);
+            line-height: (@font-swatch8-line-height * 0.8);
+        }
+    }
+    h4 {
+        font-family:@font-swatch9-font-family; 
+        font-weight: @font-swatch9-font-weight; 
+        color:@font-swatch9-color; 
+        line-height:@font-swatch9-line-height; 
+        letter-spacing: @font-swatch9-letter-spacing; 
+        font-size: @font-swatch9-font-size;
+        border-top:1px solid @color-swatch1;
+        @media @tablet {
+            font-size: (@font-swatch9-font-size * 0.8);
+            line-height: (@font-swatch9-line-height * 0.8);
+        }
+        @media @mobile {
+            font-size: (@font-swatch9-font-size * 0.7);
+            line-height: (@font-swatch9-line-height * 0.7);
+        }
+    }
+} 
+
+/*  ===============================
+    GALLERY TRANSITION
+    =============================== */
+
+.view-fifth img {
+    transition: all 0.3s ease-in-out; 
+}
+
+.view-fifth .mask { 
+    background-color: rgba(146,96,91,0.3);
+    transform: translateX(-300px);
+    opacity: 1;
+    transition: all 0.4s ease-in-out; 
+}
+
+.view-fifth h2{
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+}
+
+.view-fifth p{
+    opacity: 0;
+    color: #333;
+    transition: all 0.2s linear;
+}
+
+.view-fifth:hover .mask { 
+    transform: translateX(0px);
+}         
+
+.view-fifth:hover img { 
+    transform: translateX(300px);
+    transition-delay: 0.1s;
+}
+
+.view-fifth:hover p{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+/*  ===============================
+    Extended Navigation
+    =============================== */
+.widget.extendednavigation {
+    margin:0px auto;
+    display:table;
+    top:-30px;
+}
+
+.widget.extendednavigation .bk-overlay {
+    width:40px;
+    left:inherit!important;
+}
+
+.widget .extendednavigation ul li:hover ul {
+    background-color:darken(@color-swatch4,5%);
+    padding:0px 20px;
+    top:44px;
+    @media @tablet {
+        margin:0;
+    }
+}
+
+.widget .extendednavigation ul li.folder:after {
+  border-top-color:@font-swatch6-color;
+}
+
+.widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
+    padding:10px 20px;
+}
+
+.widget .extendednavigation ul li.folder:after {
+    top:48%;
+}
+
+.widget .extendednavigation ul li.folder:after {
+    border-top-color: @color-swatch1;
+}
+
+.widget .extendednavigation ul li a:hover, .widget .extendednavigation ul li.folder .text:hover {
+    color:darken(@font-swatch6-color,10%);
+}
+
+.widget .extendednavigation a.pull {
+    display:inline-block;
+    position: absolute;
+    right: 0;
+    top: 0!important;
+    width: 40px;
+    height: 40px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    background-repeat :no-repeat;
+}
+
+.widget .extendednavigation a.pull:after {
+    background-repeat :no-repeat;
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    top: 0;
+    right: 0;
+    margin: 0px auto;
+    display: table;
+    left: 0;
+    @media @tablet {
+            background: image('/images/nav-icon.png');
+            background-repeat :no-repeat;
+    } 
+}
+
+// -----------------------------
+// Feature
+// -----------------------------
+
+.widget.feature {
+	margin-bottom:20px;
+}
+
+// -----------------------------
+// Footer
+// -----------------------------
+
+footer.bk-footer {
+	background-color:@color-swatch4;
+    padding:80px 0px;
+}
+
+footer.bk-footer .widget.content h1,
+footer.bk-footer .widget.content h2,
+footer.bk-footer .widget.content h3,
+footer.bk-footer .widget.content h4, 
+footer.bk-footer .widget.content p, 
+footer.bk-footer .widget.content span,
+footer.bk-footer .widget.content a,  
+footer.bk-footer .widget.profile span, 
+footer.bk-footer .widget.profile p, 
+footer.bk-footer .widget.profile a {
+    color:@font-swatch7-color;
+    font-weight:@font-swatch7-font-weight;
+}
+
+.bk-footer .widget.profile {
+    text-align: right;
+    color: @color-swatch1;
+    font-weight: 400;
+}
+
+.headerbanner .widget.profile .bk-profile-socialicons {
+    margin:0;
+    float:right;
+    margin-right:20px;
+}
+
+.widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
+  text-align:center;
+  background-color:transparent;
+  margin:0;
+}
+
+.bk-profile-address p {
+    color: @font-swatch10-color;
+    float:left!important;
+    padding-right:5px;
+}
+
+.fb_iframe_widget_fluid span, .fb_iframe_widget iframe {
+    width: 100%!important;
+}
+
+footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, .widget.profile p {
+    @media @mobile {
+        text-align:center;
+        float:none;
+    }
+}

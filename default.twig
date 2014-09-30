@@ -1,0 +1,48 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-default">
+
+<div class="headerbanner">
+    <div class="responsivecolumns columns-two-50-50">
+        <div class="column columns-two-left">
+            {{widget('profile', 'thisunqiuewidgetname', { 'profileType':'phone', 'phone':'profile'refreshtime':'1800000'})|raw}}
+        </div>
+        <div class="column columns-two-right">
+            {{widget('profile', 'footercolumn1profilesocialicons', { 'profileType':'socialicons''socialicons':'profile'})|raw}}
+        </div>
+    </div>
+</div>
+
+<header class="bk-header">
+    <div class="companyheader clearfix">
+        <div class="border page-wrap">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            <div class="companytitle">
+                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            </div>
+            {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
+        </div>
+    </div>
+</header>
+
+<div class="page-wrap">
+    <div class="mainzone">
+        {{zone('main')|raw}}
+    </div>
+</div>
+
+<footer class="bk-footer">
+    <div class="wrapper clearfix">
+        {{widget('logo', 'footerlogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        {{widget('companyname', 'footercompanyname', {"business": "profile"})|raw}}
+        {{widget('content', 'footertext1', {content: 'This is a content widget.', lines: 'all'})|raw}}
+        {{widget('content', 'footertext2', {content: 'This is a content widget.', lines: 'all'})|raw}}
+    </div>
+</footer>
+
+</div>
+
+{% endblock %}
