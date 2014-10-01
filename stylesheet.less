@@ -47,6 +47,14 @@ ul, li {
     }
 }
 
+.page-wrap {
+    @media @mobile {
+        width:inherit;
+        margin:0;
+        padding:0;
+    }
+}
+
 .page-wrap-slideshow {
     width: 960px;
     margin: 0px auto;
@@ -233,11 +241,6 @@ header.bk-header {
     top:-30px;
 }
 
-.widget.extendednavigation .bk-overlay {
-    width:40px;
-    left:inherit!important;
-}
-
 .widget .extendednavigation ul li {
     @media @tablet {
         padding:0;
@@ -270,6 +273,37 @@ header.bk-header {
 .widget .extendednavigation ul li a:hover, .widget .extendednavigation ul li.folder .text:hover {
     color:darken(@font-swatch6-color,10%);
     text-decoration:underline;
+}
+
+.widget .extendednavigation a.pull {
+    display:inline-block;
+    position: absolute;
+    right: 0;
+    top: 0!important;
+    width: 40px;
+    height: 40px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+.widget .extendednavigation a.pull:after {
+    background: image('/images/nav-icon.png');
+    background-repeat :no-repeat;
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    top: 0;
+    right: 0;
+    margin: 0px auto;
+    display: table;
+    left: 0;
+    @media @tablet {
+        box-shadow:none;
+    }
 }
 
 // -----------------------------
@@ -311,8 +345,14 @@ footer.bk-footer .bk-content-text {
     margin-right:20px;
 }
 
-.widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
+.widget.profile .bk-profile-socialicons span a {
   text-align:center;
   background-color:transparent;
   margin:0;
+}
+
+.bk-profile-address p {
+    color: @font-swatch1-color;
+    float:left!important;
+    padding-right:5px;
 }
