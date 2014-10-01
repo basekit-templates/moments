@@ -9,8 +9,8 @@
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#e9a6a6",
-            "color3":"#e9a6a6",
+            "color2":"#DF9B9B",
+            "color3":"#DF9B9B",
             "color4":"#3a3a3a",
             "color5":"#888888",
             "color6":"#ffffff",
@@ -99,12 +99,12 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Aleo\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"open sans\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "14px",
-            "font-weight": "700",
+            "font-weight": "300",
             "line-height": "24px",
             "color": "@color-swatch3",
-            "letter-spacing": "inherit",
+            "letter-spacing": "1px",
             "color-hover": "@color-swatch3",
             "background-color": "@color-swatch2",
             "background-color-hover": "@color-swatch2"
@@ -117,7 +117,7 @@
             "color": "@color-swatch1",
             "letter-spacing": "1px",
             "background-color": "@color-swatch3",
-            "background-color-hover": "darken(@color-swatch3,10%)"
+            "background-color-hover": "darken(@color-swatch3,5%)"
         },
         "font8": {
             "font-family": "\"Old Standard TT\", \"Book Antiqua\", \"Palatino Linotype\", serif",
