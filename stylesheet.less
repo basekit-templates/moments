@@ -92,21 +92,29 @@ header.bk-header {
 .companyheader {
     display: block;
     padding: 0;
-    padding:20px 0px;
+    padding: 20px 0px;
 }
 
 .companytitle {
     position: relative;
     text-align: center;
-    border-top: 1px solid @color-swatch7;
     display: block;
-    margin: 0 auto;
-    padding: 25px 25px 0px 25px;
-    margin-top: 30px;
-    width:500px;
-    @media @tablet {
-        width:inherit;
-        border-top:none;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-top: 1px solid @color-swatch7;
+        height: 2px;
+        margin-top: -1px;
+        top: 50%;
+        width: 25%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        min-width: 250px;
+        @media @mobile {
+            display: none;
+        }
     }
 }
 
@@ -117,11 +125,6 @@ header.bk-header {
     padding: 0px 20px;
     margin: 0;
     background: @color-swatch1;
-    top:-45px;
-}
-
-.widget.companyname {
-    display: block;
 }
 
 .companyname a:hover {
@@ -142,19 +145,20 @@ header.bk-header {
 }
 
 .border.page-wrap {
-    padding:20px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
     width:inherit;
+    @media @tablet {
+        padding-bottom: 60px;
+    }
 }
 
 .widget.logo {
-    display: block;
     margin-right: 2px;
     padding-top: 6px;
 }
 
 .widget {
     &.logo, &.companyname {
-        display: inline-block;
         vertical-align: middle;
         margin: 0px auto;
         display: table;
@@ -235,10 +239,14 @@ header.bk-header {
 // Extended Navigation
 // -----------------------------
 
-.widget.extendednavigation {
-    margin:0px auto;
-    display:table;
-    top:-30px;
+.widget .extendednavigation {
+    margin: 12px 0;
+}
+
+.widget .extendednavigation ul {
+    @media @tablet {
+        padding-top: 60px!important;
+    }
 }
 
 .widget .extendednavigation ul li {
@@ -276,34 +284,28 @@ header.bk-header {
 }
 
 .widget .extendednavigation a.pull {
-    display:inline-block;
-    position: absolute;
     right: 0;
-    top: 0!important;
+    left: 0;
+    margin: 0 auto;
+    top: 12px!important;
     width: 40px;
     height: 40px;
-    border: none;
-    overflow: hidden;
-    cursor: pointer;
-    outline: none;
-    padding: 0;
 }
 
 .widget .extendednavigation a.pull:after {
     @media @tablet {
-    background: image('/images/nav-icon.png');
-    background-repeat :no-repeat;
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 35px;
-    top: 0;
-    right: 0;
-    margin: 0px auto;
-    display: table;
-    left: 0;
-    box-shadow:none;
-}
+        background: image('/images/nav-icon.png');
+        background-repeat :no-repeat;
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 0;
+        right: 0;
+        margin: 0px auto;
+        left: 0;
+        box-shadow:none;
+    }
 }
 
 // -----------------------------
