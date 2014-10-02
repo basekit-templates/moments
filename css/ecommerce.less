@@ -14,9 +14,7 @@
         &:hover {
 	        .ecom-productslist-title, .ecom-productlist-price,
 	        .ecom-featuredproducts-title, .ecom-featuredproducts-price {
-	            color: @font-swatch1-color;
 	            &:hover {
-					text-decoration: underline;
 	            }
 	        }
 		}
@@ -77,6 +75,9 @@
 .ecom-productlist-info {
   text-align:center;
   border:1px solid @color-swatch7;
+  &:hover {
+  	background-color:lighten(@color-swatch7,5%);
+  }
 }
 
 .ecom-productslist-title {
@@ -783,7 +784,6 @@
           padding: 5px 25px 6px;
           margin: 0;
           position: relative;
-          top: -2px;
         }
         button {
           width: 30px;
@@ -795,6 +795,7 @@
           background-color:@color-swatch3;
           margin: 0;
           background-image:none;
+          font-size: 10px;
       &:hover {
         background-color:darken(@color-swatch3,10%);
       }
