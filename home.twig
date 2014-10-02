@@ -27,31 +27,10 @@
 </header>
 
 
-<div class="slideshow-wrap">   
-    {{widget('image', 'image-widget', { 'src': asset('images/main-image.jpg'), 'fileName': 'main-image.jpg', 'fileSize': '58kb', 'imageSize': '2500 x 660', 'imageWidth': '2500px'})|raw}} 
-    <div class="page-wrap-slideshow">
-        <div id="owl-demo" class="owl-carousel owl-theme">
-            <div class="item">
-                <section class="carousel-text">
-                    <span>{{widget('content', 'textwidgetbox1', {content: '<h3 style="text-align:left">Welcome, you have been invited to Rory and Becky’s wedding ceremony</h3>', lines: 'all'})|raw}}</span>
-                    <span>{{widget('content', 'textwidgetbox2', {content: '<h4 style="text-align:left">Monday 2nd April         2014</h4>', lines: 'all'})|raw}}</span>
-                </section>
-            </div>
-            <div class="item">
-                <section class="carousel-text">
-                    <span>{{widget('content', 'textwidgetbox2', {content: '<h3 style="text-align:left">Welcome, you have been invited to Rory and Becky’s wedding ceremony</h3>', lines: 'all'})|raw}}</span>
-                    <span>{{widget('content', 'textwidgetbox4', {content: '<h4 style="text-align:left">Monday 2nd April         2014</h4>', lines: 'all'})|raw}}</span>
-                </section>
-            </div>
-            <div class="item">
-                <section class="carousel-text">
-                    <span>{{widget('content', 'textwidgetbox3', {content: '<h3 style="text-align:left">Welcome, you have been invited to Rory and Becky’s wedding ceremony</h3>', lines: 'all'})|raw}}</span>
-                    <span>{{widget('content', 'textwidgetbox6', {content: '<h4 style="text-align:left">Monday 2nd April 2014</h4>', lines: 'all'})|raw}}</span>
-                </section>
-            </div>
-        </div>
-    </div>
+<div class="feature-container">
+    {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': false})|raw}}
 </div>
+
 
 <div class="page-wrap">
 	<div class="mainzone">
