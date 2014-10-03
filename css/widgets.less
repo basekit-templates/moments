@@ -626,6 +626,9 @@ button:hover, .widget.button button:hover {
 .menu-subsection-wrapper.menu-subsection-promoted {
   background-color:@color-swatch1;
   padding:20px;
+  @media @mobile {
+  	padding:0;
+  }
 }
 
 .menu-subsection-promoted .menu-items li {
@@ -640,10 +643,6 @@ button:hover, .widget.button button:hover {
 		color:@font-swatch7-color;
 	}
 }*/
-
-.menu-subsection .menu-items li {
-	margin:0;
-}
 
 // Nutritional Info
 .menu-item-nutritional-title {
@@ -758,6 +757,7 @@ button:hover, .widget.button button:hover {
 	}
 	@media @tablet {
 		width: 100%;
+		margin-bottom:20px;
 	}
 }
 
