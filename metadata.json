@@ -1,7 +1,7 @@
 {
 	"name":"Moments",
-	"thumbnail":"interact.png",
-	"screenshot":"interact.png",
+	"thumbnail":"moments.png",
+	"screenshot":"moments.png",
     "tags": { "en": ["minimal", "clean", "wedding", "white", "posh", "modern"] },
     "pageTypes":["home"],
     "templateType":"standard",
@@ -11,7 +11,7 @@
             "color1":"#ffffff",
             "color2":"#DF9B9B",
             "color3":"#DF9B9B",
-            "color4":"#3a3a3a",
+            "color4":"#1f1f1f",
             "color5":"#888888",
             "color6":"#ffffff",
             "color7":"#eeeeee"

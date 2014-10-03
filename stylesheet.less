@@ -99,6 +99,7 @@ header.bk-header {
     position: relative;
     text-align: center;
     display: block;
+    margin-bottom: 20px;
     &:before {
         content: '';
         display: block;
@@ -114,6 +115,7 @@ header.bk-header {
         min-width: 500px;
         @media @tablet {
             display: none;
+            margin-bottom:0;
         }
     }
 }
@@ -138,7 +140,7 @@ header.bk-header {
     }
 }
 
-.border{
+.border {
     border:1px solid @color-swatch7;
     width: 97%;
     margin:0 20px;
@@ -243,7 +245,7 @@ header.bk-header {
 // -----------------------------
 
 .widget .extendednavigation {
-    margin: 20px 0 10px;
+    .clearfix;
     @media @tablet {
         padding-top:60px;
         margin: 10px 0 10px;
@@ -430,7 +432,7 @@ footer.bk-footer .bk-content-text {
     padding-right:5px;
 }
 
-.widget.profile span, .widget.profile span, .widget.profile p {
+.widget.profile span, .widget.profile span, .widget.profile p, .bk-profile-email a {
     color: @font-swatch7-color;
 }
 
@@ -445,4 +447,8 @@ footer.bk-footer .bk-content-text {
         margin:0px auto;
         display:table;
     }
+}
+
+.widget.profile form, .widget.profile map {
+    margin-bottom:10px;
 }
