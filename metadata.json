@@ -20,7 +20,7 @@
             "color1":"#ffffff",
             "color2":"#01b4f0",
             "color3":"#ca1414",
-            "color4":"#000000",
+            "color4":"#1f1f1f",
             "color5":"#888888",
             "color6":"#ffffff",
             "color7":"#eeeeee"
@@ -29,7 +29,7 @@
             "color1":"#ffffff",
             "color2":"#01b4f0",
             "color3":"#4F7391",
-            "color4":"#4F7391",
+            "color4":"#1f1f1f",
             "color5":"#888888",
             "color6":"#ffffff",
             "color7":"#eeeeee"
@@ -37,8 +37,8 @@
         "Swatch 4": {
             "color1":"#ffffff",
             "color2":"#01b4f0",
-            "color3":"#73AD5C",
-            "color4":"#73AD5C",
+            "color3":"#8FB680",
+            "color4":"#1f1f1f",
             "color5":"#888888",
             "color6":"#ffffff",
             "color7":"#eeeeee"
@@ -47,7 +47,7 @@
             "color1":"#ffffff",
             "color2":"#01b4f0",
             "color3":"#4BA5A1",
-            "color4":"#4BA5A1",
+            "color4":"#1f1f1f",
             "color5":"#888888",
             "color6":"#ffffff",
             "color7":"#eeeeee"
