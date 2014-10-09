@@ -106,8 +106,8 @@ textarea,
 	margin: 0;
 	padding: 0;
 	border: 0;
-	fieldset input {
-		
+	button {
+		padding: 11px 14px 10px;
 	}
 }
 
@@ -240,9 +240,10 @@ button:hover, .widget.button button:hover {
 }
 
 .widget.paypalbuynow .widget.button.paypal {
-	background-position: 125px;
+	background-position: top 11px right 18px;
 	padding: 10px 50px 10px 10px;
 	background-size:18px;
+	border-radius:0;
 }
 
 // Tweet
@@ -323,6 +324,9 @@ button:hover, .widget.button button:hover {
 
 .widget.profile ul.twitter p {
 	text-align:left;
+	@media @mobile {
+		text-align:center;
+	}
 }
 
 .twitter ul li a {
@@ -694,6 +698,9 @@ button:hover, .widget.button button:hover {
 	letter-spacing: 0px;
 	color:@color-swatch1;
 	border-top: 1px solid @color-swatch7;
+	@media @mobile {
+		display:none;
+	}
 }
 
 .widget.menu .main .menu-header h1:after, .widget.menu .main .menu-subsection-header h1:after {
@@ -708,6 +715,9 @@ button:hover, .widget.button button:hover {
 	letter-spacing: 0px;
 	color:@color-swatch1;
 	border-top: 1px solid @color-swatch7;
+	@media @mobile {
+		display:none;
+	}
 }
 
 /*	===============================

@@ -57,9 +57,9 @@
         "images/test.jpg"
     ],
     "fontSwatch": {
-       "title": "Signika",
+       "title": "Old Standard TT",
         "font1": {
-            "font-family": "\"Book Antiqua\", \"Palatino Linotype\", serif",
+            "font-family": "\"old standard tt\", \"Palatino Linotype\", serif",
             "font-size": "32px",
             "font-weight": "700",
             "line-height": "42px",
