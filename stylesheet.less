@@ -84,7 +84,7 @@ ul, li {
     background-color:@color-swatch4;
     .page-wrap {
         background-color:transparent;
-        padding:10px;
+        padding:10px 0px 0px 0px;
     }
 }
 
@@ -100,6 +100,13 @@ ul, li {
         float:none;
         margin-top:0;
         margin-bottom:5px;
+    }
+}
+
+.header-right .map {
+    min-width:350px;
+    @media @mobile {
+        min-width:200px;
     }
 }
 
@@ -380,11 +387,6 @@ footer.bk-footer .bk-content-text {
   background-color:transparent;
   margin:0;
 }
-
-.bk-profile-address {
-    margin: 0px auto;
-    display: table;
-}   
 
 .bk-profile-address p {
     color: @font-swatch7-color;
