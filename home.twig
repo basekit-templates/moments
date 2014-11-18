@@ -54,29 +54,3 @@
 </footer>
 
 {% endblock %}
-
-{% block bodyscripts %}
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="{{asset('js/owl-carousel/owl.carousel.js')}}"></script>
-
-<script>
-    jQuery(document).ready(function() {
-
-      $("#owl-demo").owlCarousel({
-        lazyLoad : true,
-        navigation : true,
-        slideSpeed: 200,
-        autoPlay: true,
-        stopOnHover: true,
-        items : 1, 
-        itemsDesktop : false, 
-        itemsDesktopSmall : false,
-        itemsTablet: false, 
-        itemsMobile : false,
-        navigationText : false
-      });
-    });
-</script>  
-
-{% endblock %}  
