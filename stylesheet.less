@@ -82,6 +82,33 @@ ul, li {
 
 .headerbanner {
     background-color:@color-swatch4;
+    .page-wrap {
+        background-color:transparent;
+        padding:10px;
+    }
+}
+
+.headerbanner .widget.profile .bk-profile-socialicons {
+    margin:0;
+}
+
+.header-right  {
+    margin:0;
+    float:right;
+    @media @mobile {
+        text-align: center;
+        float:none;
+        margin-top:0;
+        margin-bottom:5px;
+    }
+}
+
+.header-left{
+    @media @mobile {
+        margin:0px auto;
+        display:table;
+        text-align:center;
+    }
 }
 
 header.bk-header {
@@ -342,19 +369,6 @@ footer.bk-footer .bk-content-text {
     text-align:center;
 }
 
-.headerbanner .widget.profile .bk-profile-socialicons {
-    margin:0;
-    float:right;
-    margin-right:20px;
-    margin-top:10px;
-    @media @mobile {
-        text-align: center;
-        float:none;
-        margin-top:0;
-        margin-bottom:5px;
-    }
-}
-
 .responsivecolumns .column {
     @media @mobile {
         min-height:0;
@@ -380,21 +394,6 @@ footer.bk-footer .bk-content-text {
 
 .widget.profile span, .widget.profile span, .widget.profile p, .bk-profile-email a {
     color: @font-swatch7-color;
-}
-
-.responsivecolumns .columns-two-left, .columns-two-50-50 .columns-two-left {
-    width: 47%;
-    margin-right: 1.5%;
-    margin-left: 1.5%;
-    margin-top: 10px;
-    padding-bottom:10px;
-    @media @mobile {
-        width:100%;
-        text-align:center;
-        margin:0px auto;
-        display:table;
-        padding: 20px 20px 0px 20px;
-    }
 }
 
 .widget.profile form, .widget.profile map {
