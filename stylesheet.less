@@ -99,6 +99,8 @@ ul, li {
         margin: 0px auto;
         display: table;
         text-align: center;
+        float:none;
+        padding-bottom: 20px;
     }
 }
 
@@ -399,6 +401,9 @@ footer.bk-footer .bk-content-text {
     color: @font-swatch7-color;
     float:left!important;
     padding-right:5px;
+    @media @mobile {
+        float:none!important;
+    }
 }
 
 .widget.profile span, .widget.profile span, .widget.profile p, .bk-profile-email a {
