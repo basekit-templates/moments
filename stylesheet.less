@@ -114,7 +114,7 @@ ul, li {
     margin-bottom:10px;
     min-width:350px;
     @media @mobile {
-        min-width:280px;
+        min-width:280px!important;
     }
 }
 
@@ -413,4 +413,10 @@ footer.bk-footer .bk-content-text {
 .bk-profile-address p:after {
     content: ",";
     margin-left: -0.2em;
+}
+
+.bk-profile-address p {
+    &:last-child:after {
+        content:none;
+    }
 }
