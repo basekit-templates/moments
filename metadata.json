@@ -57,9 +57,9 @@
         "images/feature-bg.jpg"
     ],
     "fontSwatch": {
-       "title": "Palatino Linotype",
+       "title": "Palatino",
         "font1": {
-            "font-family": "\"Palatino Linotype\", serif",
+            "font-family": "\"Palatino\", serif",
             "font-size": "32px",
             "font-weight": "700",
             "line-height": "42px",
@@ -67,7 +67,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Palatino Linotype\", serif",
+            "font-family": "\"Palatino\", serif",
             "font-size": "28px",
             "font-weight": "700",
             "line-height": "38px",
@@ -75,7 +75,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Palatino Linotype\", serif",
+            "font-family": "\"Palatino\", serif",
             "font-size": "20px",
             "font-weight": "700",
             "line-height": "30px",
@@ -83,7 +83,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Palatino Linotype\", serif",
+            "font-family": "\"Palatino\", serif",
             "font-size": "16px",
             "font-weight": "400",
             "line-height": "32px",
@@ -91,7 +91,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Palatino Linotype\", serif",
+            "font-family": "\"Palatino\", serif",
             "font-size": "15px",
             "font-weight": "300",
             "line-height": "28px",
@@ -99,7 +99,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Palatino Linotype\", serif",
+            "font-family": "\"Palatino\", serif",
             "font-size": "14px",
             "font-weight": "300",
             "line-height": "24px",
@@ -110,7 +110,7 @@
             "background-color-hover": "@color-swatch2"
          },
         "font7": {
-            "font-family": "\"Palatino Linotype\", serif",
+            "font-family": "\"Palatino\", serif",
             "font-size": "14px",
             "font-weight": "700",
             "line-height": "24px",
@@ -120,7 +120,7 @@
             "background-color-hover": "darken(@color-swatch3,5%)"
         },
         "font8": {
-            "font-family": "\"Palatino Linotype\", serif",
+            "font-family": "\"Palatino\", serif",
             "font-size": "26px",
             "font-weight": "400",
             "line-height": "36px",
@@ -128,7 +128,7 @@
             "letter-spacing": "1px"
         },
         "font9": {
-            "font-family": "\"Palatino Linotype\", serif",
+            "font-family": "\"Palatino\", serif",
             "font-size": "16px",
             "font-weight": "300",
             "line-height": "30px",
@@ -136,7 +136,7 @@
             "letter-spacing": "1px"
         },
         "font10": {
-            "font-family": "\"Palatino Linotype\", serif",
+            "font-family": "\"Palatino\", serif",
             "font-size": "32px",
             "font-weight": "700",
             "line-height": "40px",
