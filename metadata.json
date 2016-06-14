@@ -1,7 +1,7 @@
 {
 	"name":"Moments",
 	"thumbnail":"moments.png",
-	"screenshot":"moments.png",
+	"screenshot":"moments-screenshot.jpg",
     "tags": { "en": ["minimal", "clean", "wedding", "white", "posh", "modern"] },
     "pageTypes":["home"],
     "templateType":"standard",
