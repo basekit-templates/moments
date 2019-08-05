@@ -1,5 +1,6 @@
 {
 	"name":"Moments",
+	"versionTenCompatible": 1,
 	"thumbnail":"moments.png",
 	"screenshot":"moments-screenshot.jpg",
     "tags": { "en": ["minimal", "clean", "wedding", "white", "posh", "modern"] },
