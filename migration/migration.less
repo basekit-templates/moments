@@ -37,7 +37,7 @@
 // Replace with corresponding template values
 @container-width: 960px;
 
-@spacing__first--desktop: 40px;
+@spacing__first--desktop: 25px;
 @spacing__first--tablet:  30px;
 @spacing__first--mobile:  20px;
 
@@ -52,7 +52,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: @container-width;
-  width: 90%;
+  width: 95%;
 }
 
 
@@ -105,5 +105,21 @@
   }
 }
 
+// Section controls
+.row-overlay:before,
+.row-overlay:after {
+    background: none !important;
+}
+.row-overlay:before {
+    background-image: linear-gradient(to right, transparent , #e8e8e8) !important;
+}
+.row-overlay:after {
+    background-image: linear-gradient(to left, transparent , #e8e8e8) !important;
+}
+
+.row-overlay {
+    left: -131px;
+    right: -131px;
+}
 
 } // End of #migrated-site
